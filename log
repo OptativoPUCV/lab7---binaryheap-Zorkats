@@ -109,3 +109,14 @@ heap.c:47:7: error: unused variable ‘hijoInferior’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9832af6
+Thu 11 May 2023 10:21:54 PM UTC: 
+ heap.c | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:50:12: error: unused variable ‘aux’ [-Werror=unused-variable]
+   50 |   heapElem aux;
+      |            ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+528666c
