@@ -77,3 +77,9 @@ heap.c:35:21: error: called object is not a function or function pointer
       |                     ^~
 Compilation failed
 70fa39c
+Thu 11 May 2023 03:43:03 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|2
+total_score: 20/70
+d39259b
