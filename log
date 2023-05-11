@@ -120,3 +120,15 @@ heap.c:50:12: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 528666c
+Thu 11 May 2023 10:23:28 PM UTC: 
+ heap.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:50:32: error: ‘pos’ undeclared (first use in this function); did you mean ‘pow’?
+   50 |   heapElem aux = pq->heapArray[pos];
+      |                                ^~~
+      |                                pow
+heap.c:50:32: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+5ca605b
