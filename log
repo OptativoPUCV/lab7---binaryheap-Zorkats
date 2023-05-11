@@ -89,3 +89,23 @@ Thu 11 May 2023 03:43:23 PM UTC:
  tests:  7|1
 total_score: 45/70
 26255cb
+Thu 11 May 2023 03:48:48 PM UTC: 
+ heap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:48:12: error: unused variable ‘aux’ [-Werror=unused-variable]
+   48 |   heapElem aux;
+      |            ^~~
+heap.c:47:44: error: unused variable ‘i’ [-Werror=unused-variable]
+   47 |   int hijoInferior = 1 , hijoSuperior = 2, i = 0;
+      |                                            ^
+heap.c:47:26: error: unused variable ‘hijoSuperior’ [-Werror=unused-variable]
+   47 |   int hijoInferior = 1 , hijoSuperior = 2, i = 0;
+      |                          ^~~~~~~~~~~~
+heap.c:47:7: error: unused variable ‘hijoInferior’ [-Werror=unused-variable]
+   47 |   int hijoInferior = 1 , hijoSuperior = 2, i = 0;
+      |       ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9832af6
